@@ -4,6 +4,7 @@ const express=require('express')
 const { send } = require('process')
 
 const app=express()
+const port = process.env.PORT || 3000;
 
 
 
@@ -46,6 +47,6 @@ app.post('/sendMessage', async (req,res)=>{
 
 
 
-app.listen(5000,()=>{
+app.listen(port,()=>{
     console.log('server is listening')
 })
