@@ -466,7 +466,7 @@ form.addEventListener('submit', async function (e) {
         text += `<b>Текст: </b>${this.text.value}`
 
 
-        const response = await axios.post('http://localhost:5000/sendMessage', {
+        const response = await axios.post('https://levelengschool.onrender.com/sendMessage', {
             
             text: text,
             
